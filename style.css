@@ -177,3 +177,62 @@ img { display: block; max-width: 100%; }
 @media (max-width: 800px) {
   .about__grid { grid-template-columns: 1fr; gap: 2.5rem; }
 }
+
+/* ==========================================================
+   Activity 3: Skills (reusable .skill-card)
+   ========================================================== */
+.section__lead {
+  margin: -1rem 0 2rem;
+  color: var(--muted);
+}
+
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 1.5rem;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.skill-card__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+.skill-card__desc {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
+.skill-card__level {
+  align-self: flex-start;
+  margin: auto 0 0;
+  padding: 0.2rem 0.7rem;
+  background: var(--sand);
+  border-radius: 999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--teal-dark);
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+.footer p { margin: 0; }
