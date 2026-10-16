@@ -28,3 +28,6 @@ menuLinks.forEach(function (link) {
     menu.classList.remove("is-open");
   });
 });
+
+// ===== Activity 9: Always show the current year in the footer =====
+document.getElementById("year").textContent = new Date().getFullYear();

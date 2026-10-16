@@ -543,3 +543,22 @@ img { display: block; max-width: 100%; }
   .contact-form { padding: 1.25rem; }
   .contact-form .btn { width: 100%; }
 }
+
+/* ==========================================================
+   Activity 9: Final footer
+   ========================================================== */
+.footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.footer__links {
+  display: flex;
+  gap: 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer__links a { color: var(--teal-dark); font-weight: 500; }
