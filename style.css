@@ -499,3 +499,47 @@ img { display: block; max-width: 100%; }
 @media (max-width: 800px) {
   .contact__grid { grid-template-columns: 1fr; gap: 2.5rem; }
 }
+
+/* ==========================================================
+   Activity 8: Phone responsiveness
+   ========================================================== */
+/* Menu button is hidden on big screens */
+.menu-btn {
+  display: none;
+  padding: 0.3rem 0.75rem;
+  font-size: 1.5rem;
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* ---------- Tablets and phones ---------- */
+@media (max-width: 720px) {
+  .topbar__inner { flex-wrap: wrap; padding: 0.6rem 1.25rem; }
+  .menu-btn { display: block; }
+
+  /* Menu is hidden until the button adds the "is-open" class */
+  .topbar__links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  .topbar__links.is-open { display: flex; }
+
+  .projects__list { grid-template-columns: 1fr; }
+}
+
+/* ---------- Small phones ---------- */
+@media (max-width: 480px) {
+  .hero,
+  .section,
+  .footer { padding-left: 1.25rem; padding-right: 1.25rem; }
+  .section { padding-top: 3.5rem; padding-bottom: 3.5rem; }
+
+  .hero__name { font-size: 2.6rem; }
+  .skills__grid { grid-template-columns: 1fr; }
+  .project { padding: 1.5rem; }
+  .contact-form { padding: 1.25rem; }
+  .contact-form .btn { width: 100%; }
+}
