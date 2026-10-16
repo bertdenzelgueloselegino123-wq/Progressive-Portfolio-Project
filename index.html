@@ -20,6 +20,7 @@
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </nav>
@@ -264,11 +265,60 @@
     </div>
   </section>
 
+
+  <!-- ========== ACTIVITY 7: Contact ========== -->
+  <section class="section contact" id="contact">
+    <h2 class="section__title">Get in touch</h2>
+
+    <div class="contact__grid">
+      <div class="contact__info">
+        <p>
+          Have a question about my projects, or want to work together on
+          something? Send me a message.
+        </p>
+        <dl class="facts">
+          <div>
+            <dt>Email</dt>
+            <!-- EDIT: your real email -->
+            <dd><a href="mailto:your.email@example.com">your.email@example.com</a></dd>
+          </div>
+          <div>
+            <dt>GitHub</dt>
+            <dd><a href="https://github.com/bertdenzelgueloselegino123-wq">bertdenzelgueloselegino123-wq</a></dd>
+          </div>
+          <div>
+            <dt>Location</dt>
+            <dd>Butuan City, Philippines</dd>
+          </div>
+        </dl>
+      </div>
+
+      <!-- "required", type="email" and minlength make the browser check the fields -->
+      <form class="contact-form" id="contact-form">
+        <div class="field">
+          <label for="name">Your name</label>
+          <input id="name" type="text" required>
+        </div>
+        <div class="field">
+          <label for="email">Your email</label>
+          <input id="email" type="email" required>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" minlength="10" required></textarea>
+        </div>
+        <button class="btn" type="submit">Send message</button>
+        <p class="contact-form__status" id="form-status"></p>
+      </form>
+    </div>
+  </section>
+
   </main>
 
   <footer class="footer">
     <p>&copy; 2026 Bert Denzel G. Elegino</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>

@@ -443,3 +443,59 @@ img { display: block; max-width: 100%; }
 
 /* Leave room for the sticky bar when a menu link scrolls to a section */
 .section { scroll-margin-top: 4.5rem; }
+
+/* ==========================================================
+   Activity 7: Contact (form)
+   ========================================================== */
+.contact__grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 3.5rem;
+  align-items: start;
+}
+
+.contact__info p { margin: 0 0 2rem; max-width: 30rem; }
+.contact__info a { color: var(--teal-dark); word-break: break-word; }
+
+.contact-form {
+  padding: 2rem;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.field { margin-bottom: 1.25rem; }
+
+.field label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-weight: 500;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  padding: 0.75rem 0.9rem;
+  font: inherit;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.field input:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: var(--teal);
+}
+
+.contact-form .btn { border: 0; cursor: pointer; font: inherit; }
+
+.contact-form__status {
+  margin: 1rem 0 0;
+  font-weight: 500;
+  color: var(--teal-dark);
+}
+
+@media (max-width: 800px) {
+  .contact__grid { grid-template-columns: 1fr; gap: 2.5rem; }
+}
