@@ -317,3 +317,75 @@ img { display: block; max-width: 100%; }
 @media (max-width: 900px) {
   .projects__list { grid-template-columns: 1fr 1fr; }
 }
+
+/* ==========================================================
+   Activity 5: Education & Experience (timeline)
+   ========================================================== */
+.journey__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
+}
+
+.journey__label {
+  margin: 0 0 1.5rem;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+}
+
+.timeline {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-left: 2px solid var(--line);
+}
+
+.timeline__item {
+  position: relative;
+  padding: 0 0 2rem 1.75rem;
+}
+.timeline__item:last-child { padding-bottom: 0; }
+
+/* The dot that sits on the vertical line */
+.timeline__item::before {
+  content: "";
+  position: absolute;
+  left: -7px;
+  top: 0.45rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--paper);
+  border: 2px solid var(--teal);
+}
+.timeline__item:first-child::before { background: var(--teal); }
+
+.timeline__date {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--teal);
+}
+
+.timeline__title {
+  margin: 0.15rem 0 0.2rem;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  line-height: 1.25;
+}
+
+.timeline__place {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--ink);
+}
+
+.timeline__desc {
+  margin: 0.4rem 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 800px) {
+  .journey__grid { grid-template-columns: 1fr; gap: 3rem; }
+}
