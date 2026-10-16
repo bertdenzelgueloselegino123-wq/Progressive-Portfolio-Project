@@ -389,3 +389,57 @@ img { display: block; max-width: 100%; }
 @media (max-width: 800px) {
   .journey__grid { grid-template-columns: 1fr; gap: 3rem; }
 }
+
+/* ==========================================================
+   Activity 6: Navigation menu (sticky top bar)
+   ========================================================== */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(244, 247, 246, 0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+
+.topbar__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0.85rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.topbar__brand {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.topbar__links {
+  display: flex;
+  gap: 0.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.topbar__links a {
+  display: block;
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  color: var(--muted);
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+.topbar__links a:hover { background: var(--sand); color: var(--ink); }
+
+.topbar a:focus-visible { outline: 3px solid var(--teal); outline-offset: 2px; }
+
+/* Leave room for the sticky bar when a menu link scrolls to a section */
+.section { scroll-margin-top: 4.5rem; }
